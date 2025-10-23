@@ -32,6 +32,7 @@ st.header("Load Data")
 
 current_dir = os.path.dirname(__file__)
 csv_file = os.path.join(current_dir, "data.csv")
+df = pd.read_csv(csv_file)
 
 if os.path.exists(csv_file):
     df = pd.read_csv(csv_file)
