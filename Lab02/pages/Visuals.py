@@ -82,7 +82,10 @@ else:
 
 
 # GRAPH 3: DYNAMIC GRAPH
-json_file = os.path.join(current_dir, "data.json")
+current_dir = os.path.dirname(__file__) 
+
+json_file = os.path.join(current_dir, "..", "data.json") 
+json_file = os.path.abspath(json_file) 
 
 if os.path.exists(json_file):
     try:
