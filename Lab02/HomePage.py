@@ -35,4 +35,7 @@ On the left we have our main pages:
 # 2. Place your image file (e.g., 'welcome_image.png') inside that folder.
 # 3. Uncomment the line below and change the filename to match yours.
 #
-st.image("GT_Library.jpeg")
+current_dir = os.path.dirname(__file__)
+image_path = os.path.join(current_dir, "GT_Library.jpeg")
+
+st.image(image_path)
