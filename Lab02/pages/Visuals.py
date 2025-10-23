@@ -108,6 +108,6 @@ if "data_points" in json_data and json_data["data_points"]:
     #bar chart
     st.bar_chart(json_df.set_index("label")["Scaled Value"])
 
-    st.caption("Use the slider to adjust how the values are scaled. This demonstrates dynamic graphing with JSON data.")
+    st.caption("Use the slider to adjust how the values are scaled.")
 else:
     st.warning("No data points found in JSON file.")
