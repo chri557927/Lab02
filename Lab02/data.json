@@ -1,0 +1,12 @@
+{
+    "chart_title": "hours_studied",
+    "data_points": [
+        { "label": "Monday", "value": 2 },
+        { "label": "Tuesday", "value": 3 },
+        { "label": "Wednesday", "value": 4 },
+        { "label": "Thursday", "value": 1 },
+        { "label": "Friday", "value": 3 },
+        { "label": "Saturday", "value": 5 },
+        { "label": "Sunday", "value": 0 }
+    ]
+}
