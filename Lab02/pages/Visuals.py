@@ -30,9 +30,9 @@ st.header("Load Data")
 # 2. Load the data from 'data.json' into a Python dictionary.
 #    - Use a 'try-except' block here as well.
 
-current_dir = os.path.dirname(__file__)
-csv_file = os.path.join(current_dir, "data.csv")
-df = pd.read_csv(csv_file)
+current_dir = os.path.dirname(__file__)     
+csv_file = os.path.join(current_dir, "..", "data.csv")  
+csv_file = os.path.abspath(csv_file)      
 
 if os.path.exists(csv_file):
     df = pd.read_csv(csv_file)
