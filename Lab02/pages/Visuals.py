@@ -30,7 +30,8 @@ st.header("Load Data")
 # 2. Load the data from 'data.json' into a Python dictionary.
 #    - Use a 'try-except' block here as well.
 
-csv_file = "data.csv"
+current_dir = os.path.dirname(__file__)
+csv_file = os.path.join(current_dir, "data.csv")
 
 if os.path.exists(csv_file):
     df = pd.read_csv(csv_file)
@@ -80,7 +81,7 @@ else:
 
 
 # GRAPH 3: DYNAMIC GRAPH
-json_file = "data.json"
+json_file = os.path.join(current_dir, "data.json")
 
 if os.path.exists(json_file):
     try:
